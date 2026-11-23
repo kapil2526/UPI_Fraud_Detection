@@ -221,3 +221,40 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset files
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Keep empty directories
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Model artifacts
+ml/artifacts/*.pkl
+ml/artifacts/*.joblib
+
+# OS files
+.DS_Store
+Thumbs.db
