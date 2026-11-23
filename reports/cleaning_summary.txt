@@ -1,0 +1,12 @@
+BEFORE vs AFTER CLEANING
+==============================
+rows               before:   250000   after:   250000
+columns            before:       17   after:       17
+missing_values     before:        0   after:        0
+duplicate_rows     before:        0   after:        0
+duplicate_ids      before:        0   after:        0
+fraud_count        before:      480   after:      480
+
+Outliers in amount_inr (IQR rule): 21171 (kept, not removed)
+Outlier upper limit: 3558.0
+Rows removed in total: 0
