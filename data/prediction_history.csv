@@ -1,0 +1,2 @@
+amount_inr,hour_of_day,transaction_type,merchant_category,transaction_status,sender_age_group,receiver_age_group,sender_state,sender_bank,receiver_bank,device_type,network_type,day_of_week,is_weekend,fraud_probability,prediction,risk_level,time
+500.0,12,Bill Payment,Education,SUCCESS,18-25,18-25,Andhra Pradesh,Axis,Axis,Android,3G,Monday,0,0.6077755615557401,1,High,2026-11-25 15:39:15
