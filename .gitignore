@@ -24,6 +24,7 @@ env/
 
 # Model artifacts
 ml/artifacts/*.pkl
+!ml/artifacts/best_model.pkl
 ml/artifacts/*.joblib
 
 # OS files
