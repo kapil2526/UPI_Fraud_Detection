@@ -6,6 +6,7 @@ APP_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(APP_DIR)
 
 SRC_DIR = os.path.join(BASE_DIR, "ml", "src")
+MODEL_PATH = os.path.join(BASE_DIR, "ml", "artifacts", "best_model.pkl")
 DATA_PATH = os.path.join(BASE_DIR, "data", "processed", "cleaned_data.csv")
 HISTORY_PATH = os.path.join(BASE_DIR, "data", "prediction_history.csv")
 FIGURE_DIR = os.path.join(BASE_DIR, "reports", "figures")
