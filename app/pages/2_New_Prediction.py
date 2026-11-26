@@ -11,6 +11,7 @@ from components import prediction_result, sidebar
 st.set_page_config(page_title="New Prediction", page_icon="🔍")
 sidebar.show_sidebar()
 st.title("🔍 New Prediction")
+model_loader.need_model()
 
 tab1, tab2 = st.tabs(["One transaction", "Upload a CSV file"])
 
@@ -59,7 +60,5 @@ with tab2:
             c2.metric("Flagged as fraud", int(result["prediction"].sum()))
             st.bar_chart(result["risk_level"].value_counts())
             st.dataframe(result.head(100))
-            st.download_button("Download results", result.to_csv(index=False),
-                               file_name="fraud_predictions.csv", mime="text/csv")
-        except ValueError as error:
-            st.error(str(error))
+        except Exception as exc:
+            st.error(f"Could not process the uploaded CSV: {exc}")

@@ -11,6 +11,7 @@ from components import metric_cards, sidebar
 st.set_page_config(page_title="Model Performance", page_icon="📊")
 sidebar.show_sidebar()
 st.title("📊 Model Performance")
+model_loader.need_model()
 
 info = model_loader.get_model_info()
 st.write("Model:", info["model_name"])
